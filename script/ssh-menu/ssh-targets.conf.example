@@ -1,0 +1,16 @@
+# ssh-targets.conf.example
+# Copy this file to ssh-targets.conf and edit the lines.
+#
+# Format (required):
+#   Display name|user@host
+#
+# Rules:
+#   - One target per line
+#   - Separate the label and the SSH destination with a single pipe |
+#   - Lines starting with # are comments
+#   - Blank lines are ignored
+#   - Do not wrap values in quotes
+
+# Examples
+Office Linux|alice@192.168.1.10
+Jump host|bob@bastion.example.com
