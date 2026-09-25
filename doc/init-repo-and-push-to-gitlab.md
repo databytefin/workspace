@@ -8,11 +8,13 @@ This short guide walks you through creating a local Git repository, making the f
 mkdir myproject
 cd myproject
 git init
+code .
 ```
 
-* `mkdir myproject` creates a new project folder.
-* `cd myproject` moves into that folder.
-* `git init` turns the folder into a Git repository.
+- `mkdir myproject` creates a new project folder.
+- `cd myproject` moves into that folder.
+- `git init` turns the folder into a Git repository.
+- `code .` opens the current folder in Visual Studio Code.
 
 ## 2. Add a first file and make the initial commit
 
@@ -22,9 +24,9 @@ git add .
 git commit -m 'initial commit'
 ```
 
-* `touch README.md` creates an empty README file.
-* `git add .` stages all new and changed files in the current directory.
-* `git commit -m 'initial commit'` records the staged changes as the initial commit.
+- `touch README.md` creates an empty README file.
+- `git add .` stages all new and changed files in the current directory.
+- `git commit -m 'initial commit'` records the staged changes as the initial commit.
 
 ## 3. Create a new repository on GitLab
 
@@ -32,10 +34,10 @@ git commit -m 'initial commit'
 2. Click **New project/repository**.
 3. Enter a project name, for example, `myproject`.
 4. Choose the appropriate **Visibility Level**:
+   - **Private**
+   - **Internal**
+   - **Public**
 
-   * **Private**
-   * **Internal**
-   * **Public**
 5. Create the project.
 
 > **Note:** Do not initialize the GitLab repository with a README or other files because the local repository already contains the initial commit.
@@ -56,9 +58,9 @@ git remote add origin git@gitlab.com:username/myproject.git
 git push -u origin main
 ```
 
-* `git branch -M main` renames the current branch to `main`.
-* `git remote add origin ...` connects the local repository to the GitLab repository.
-* `git push -u origin main` pushes the `main` branch to GitLab and sets it as the upstream branch.
+- `git branch -M main` renames the current branch to `main`.
+- `git remote add origin ...` connects the local repository to the GitLab repository.
+- `git push -u origin main` pushes the `main` branch to GitLab and sets it as the upstream branch.
 
 Replace:
 
@@ -74,8 +76,8 @@ After a successful push, refresh the GitLab project page.
 
 You should see:
 
-* `README.md`
-* The `main` branch
-* The `initial commit`
+- `README.md`
+- The `main` branch
+- The `initial commit`
 
 The local Git repository is now connected to GitLab and ready for future commits and pushes.
